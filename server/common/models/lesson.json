@@ -1,0 +1,42 @@
+{
+  "name": "Lesson",
+  "plural": "Lessons",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "subject": {
+      "type": "string"
+    },
+    "teachers": {
+      "type": [
+        "string"
+      ]
+    },
+    "startTime": {
+      "type": "date"
+    },
+    "endTime": {
+      "type": "date"
+    },
+    "groups": {
+      "type": [
+        "string"
+      ]
+    },
+    "rooms": {
+      "type": [
+        "string"
+      ]
+    },
+    "booker": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

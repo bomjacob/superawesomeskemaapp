@@ -1,0 +1,43 @@
+{
+  "name": "Timetable",
+  "plural": "Timetables",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "room": {
+      "type": "string"
+    },
+    "student": {
+      "type": "string"
+    },
+    "teacher": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    }
+  },
+  "scope": {
+    "include": "lessons"
+  },
+  "validations": [],
+  "relations": {
+    "lessons": {
+      "type": "hasMany",
+      "model": "Lesson",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
