@@ -1,0 +1,37 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <dk.aarhustech.edu.rainbow.horario.SingleFingerSwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="dk.aarhustech.edu.rainbow.horario.MapFragment">
+
+        <dk.aarhustech.edu.rainbow.horario.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </dk.aarhustech.edu.rainbow.horario.SingleFingerSwipeRefreshLayout>
+
+    <com.dekoservidoni.omfm.OneMoreFabMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:content_options="@menu/map_layers"
+        app:close_on_click="true"
+        app:color_main_button="@color/colorPrimaryDark"
+        app:color_secondary_buttons="@color/colorPrimary"
+        app:expanded_background_color="@color/omfm_expanded_background_sample"
+        app:rotate_main_button="false"
+        app:size_main_button="@integer/omfm_fab_size_normal"
+        app:size_secondary_buttons="@integer/omfm_fab_size_mini"
+        app:label_text_color="@color/colorPrimary"
+        app:enable_main_as_action="true"
+        app:main_action_drawable="@drawable/ic_layers"/>
+
+</android.support.design.widget.CoordinatorLayout>

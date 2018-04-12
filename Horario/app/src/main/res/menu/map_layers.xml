@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/floor_button"
+        android:icon="@drawable/ic_layers"
+        android:title=""/>
+
+    <!-- Options buttons of the Fab menu -->
+    <item
+        android:id="@+id/floor_D2100"
+        android:icon="@drawable/ic_layers"
+        android:title="@string/d2100" />
+
+    <item
+        android:id="@+id/floor_D2200"
+        android:icon="@drawable/ic_layers"
+        android:title="@string/d2200" />
+
+    <item
+        android:id="@+id/floor_D2300"
+        android:icon="@drawable/ic_layers"
+        android:title="@string/d2300" />
+
+</menu>

@@ -1,0 +1,2 @@
+include ':app', ':omfm'
+project(':omfm').projectDir = new File('app/libs/OMFM-master/omfm')
