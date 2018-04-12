@@ -2,6 +2,8 @@
 Aarhus Tech Timetable App  
 Informationtechnologi exam project (danish)
 
+NOTE: this repository makes use of symlinks, and will therefore probably not work without some fiddeling.
+
 # Overview
 
 ## Horario
